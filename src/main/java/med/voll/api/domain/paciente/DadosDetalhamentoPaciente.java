@@ -1,4 +1,6 @@
-package med.voll.api.paciente;
+package med.voll.api.domain.paciente;
+
+import med.voll.api.domain.endereco.Endereco;
 
 public record DadosDetalhamentoPaciente(
         Long id,
@@ -12,7 +14,7 @@ public record DadosDetalhamentoPaciente(
 
         String cpf,
 
-        med.voll.api.endereco.Endereco endereco
+        Endereco endereco
 ) {
 
     public DadosDetalhamentoPaciente(Paciente paciente){
