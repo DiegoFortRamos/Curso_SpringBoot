@@ -29,7 +29,10 @@ public class Endereco {
         this.uf = dados.uf();
     }
 
-    public void atualizarInformacoes(DadosEndereco dados) {
+
+
+
+    public void atualizaInformacoes(DadosEndereco dados) {
         if (dados.logradouro() != null){
             this.logradouro = dados.logradouro();
         }
